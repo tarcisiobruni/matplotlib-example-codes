@@ -45,7 +45,7 @@ plt.title('Median Salary (USD) by Age')
 '''Plot legends'''
 plt.legend()
 
-'''i do not know'''
+'''Give to the plot some padding'''
 plt.tight_layout()
 
 '''Save the figure with given name or path'''
