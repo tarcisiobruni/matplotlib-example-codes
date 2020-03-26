@@ -1,6 +1,6 @@
 import pandas as pd
 from matplotlib import pyplot as plt
-data = pd.read_csv('./data-lang.csv')
+data = pd.read_csv('./data-filling-area.csv')
 ages = data['Age']
 dev_salaries = data['All_Devs']
 py_salaries = data['Python']
