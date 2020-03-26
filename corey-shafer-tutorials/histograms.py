@@ -3,13 +3,21 @@ from matplotlib import pyplot as plt
 
 plt.style.use('fivethirtyeight')
 
-ages = [18, 19, 21, 25, 26, 26, 30, 32, 38, 45, 55]
+# plt.hist(ages, bins=bins, edgecolor='black')
+
 data = pd.read_csv('data-histogram.csv')
 ids = data['Responder_id']
 ages = data['Age']
 
-media_age = 29
+bins = [10,20,30,40,50,60,70]
+
+plt.hist(ages,bins=bins,edgecolor='black', log=True)
+
+median_age = 29
 color = '#fc4f30'
+
+# axis vertical line
+plt.axvline(median_age,color='red',label='Age Median', linewidth=2)
 
 plt.legend()
 
